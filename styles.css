@@ -57,7 +57,7 @@ body {
   background: white;
   min-width: 300px;
   border-radius: 12px;
-  overflow: hidden;
+  /* let content grow; don't clip text */
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   scroll-snap-align: start;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -90,17 +90,6 @@ body {
 .card p {
   font-size: 0.95rem;
   opacity: 0.85;
-}
-
-.extra {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-}
-
-.card:hover .extra {
-  max-height: 200px;
-  margin-top: 10px;
 }
 
 /* SCROLL TEXT */
